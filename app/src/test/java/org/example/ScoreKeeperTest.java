@@ -13,7 +13,7 @@ public class ScoreKeeperTest {
         scoreKeeper = new ScoreKeeper();
     }
 
-    @@Test
+    @Test
     public void initialScoresShouldBeZero() {
         assertEquals(0, scoreKeeper.getScoreTeamA());
         assertEquals(0, scoreKeeper.getScoreTeamB());
