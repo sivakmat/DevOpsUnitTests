@@ -19,4 +19,10 @@ public class ScoreKeeperTest {
         assertEquals(0, scoreKeeper.getScoreTeamB());
     }
 
+    @Test
+    public void testScoreTeamA1() {
+        scoreKeeper.scoreTeamA1();
+        assertEquals("001:000", scoreKeeper.getScore());
+    }
+
 }
