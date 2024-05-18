@@ -61,4 +61,11 @@ public class ScoreKeeperTest {
         scoreKeeper.setScoreTeamA(5);
         assertEquals("005:000", scoreKeeper.getScore());
     }
+
+    // Neuer Test für das Erhöhen der Punktestände um einen bestimmten Wert für Team B
+    @Test
+    public void testAddScoreTeamB() {
+        scoreKeeper.addScoreTeamB(4);
+        assertEquals("000:004", scoreKeeper.getScore());
+    }
 }
