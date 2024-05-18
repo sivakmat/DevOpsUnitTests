@@ -56,5 +56,13 @@ public class ScoreKeeper {
     public void addScoreTeamB(int points) {
         scoreTeamB += points;
     }
-}
 
+    // Neue Methode zum Zurücksetzen der Punktestände bei Erreichen eines bestimmten Punktelimits
+    public void checkAndResetScores() {
+        int limit = 100; // Beispiel für ein Punktelimit
+        if (scoreTeamA > limit || scoreTeamB > limit) {
+            scoreTeamA = 0;
+            scoreTeamB = 0;
+        }
+    }
+}
