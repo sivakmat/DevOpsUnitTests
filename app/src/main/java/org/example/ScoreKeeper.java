@@ -22,6 +22,7 @@ public class ScoreKeeper {
         return String.format("%03d:%03d", scoreTeamA, scoreTeamB);
     }
 
+    // Neue Methoden zum Punkte an den jeweiligen Teams zu vergeben
     public void scoreTeamA1() {
         scoreTeamA += 1;
     }
