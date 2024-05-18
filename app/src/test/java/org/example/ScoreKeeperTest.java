@@ -68,4 +68,13 @@ public class ScoreKeeperTest {
         scoreKeeper.addScoreTeamB(4);
         assertEquals("000:004", scoreKeeper.getScore());
     }
+    
+    // Neuer Test für das Zurücksetzen der Punktestände bei Erreichen eines bestimmten Punktelimits
+    @Test
+    public void testCheckAndResetScores() {
+        scoreKeeper.scoreTeamA3();
+        scoreKeeper.addScoreTeamB(100);
+        scoreKeeper.checkAndResetScores();
+        assertEquals("000:000", scoreKeeper.getScore());
+    }
 }
