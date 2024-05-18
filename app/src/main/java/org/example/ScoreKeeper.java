@@ -47,6 +47,9 @@ public class ScoreKeeper {
         scoreTeamB += 3;
     }
 
-    
+    // Neue Methode zum Setzen des Punktestands für Team A
+    public void setScoreTeamA(int score) {
+        scoreTeamA = score;
+    }
 }
 
