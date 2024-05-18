@@ -51,5 +51,10 @@ public class ScoreKeeper {
     public void setScoreTeamA(int score) {
         scoreTeamA = score;
     }
+
+    // Neue Methode zum Erhöhen des Punktestands für Team B um einen bestimmten Wert
+    public void addScoreTeamB(int points) {
+        scoreTeamB += points;
+    }
 }
 
