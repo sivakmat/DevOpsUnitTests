@@ -34,9 +34,10 @@ public class ScoreKeeper {
     public void scoreTeamA3() {
         scoreTeamA += 3;
     }
-    
+
     public void scoreTeamB1() {
         scoreTeamB += 1;
     }
+
 }
 
